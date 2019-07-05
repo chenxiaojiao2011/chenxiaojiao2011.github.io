@@ -34,50 +34,41 @@
   
 //hover自动展开当前，缩小其他
 $(document).ready(function(){
-	if (currentClass === "a")
-	{
-		$("#tech").addClass("current-class");
-		$("#design-item").hide();
-		$("#idea-item").hide();
-		$("#hobby-item").hide();
-	}
-	else if (currentClass === "b")
-	{
-		$("#design").addClass("current-class");
-		$("#tech-item").hide();
-		$("#idea-item").hide();
-		$("#hobby-item").hide();
-	}
-	else if (currentClass === "c")
-	{
-		$("#idea").addClass("current-class");
-		$("#tech-item").hide();
-		$("#design-item").hide();
-		$("#hobby-item").hide();
-	}
+	$("#tech").show().addClass("current-class");
+	$("#design").show().addClass("current-class");
+	$("#idea").show().addClass("current-class");
+	// if (currentClass === "a")
+	// {
+	// 	$("#tech").addClass("current-class");
+	// 	$("#design-item").hide();
+	// 	$("#idea-item").hide();
+	// }
+	// else if (currentClass === "b")
+	// {
+	// 	$("#design").addClass("current-class");
+	// 	$("#tech-item").hide();
+	// 	$("#idea-item").hide();
+	// }
+	// else if (currentClass === "c")
+	// {
+	// 	$("#idea").addClass("current-class");
+	// 	$("#tech-item").hide();
+	// 	$("#design-item").hide();
+	// }
 
-	$("#tech").hover(function() {
-		$("#tech-item").show("slow");
-		$("#design-item").hide("slow");
-		$("#idea-item").hide("slow");
-		$("#hobby-item").hide("slow");
-	});
-	$("#design").hover(function() {
-		$("#tech-item").hide("slow");
-		$("#design-item").show("slow");
-		$("#idea-item").hide("slow");
-		$("#hobby-item").hide("slow");		
-	});
-	$("#idea").hover(function() {
-		$("#tech-item").hide("slow");
-		$("#design-item").hide("slow");
-		$("#idea-item").show("slow");
-		$("#hobby-item").hide("slow");
-	});
-	$("#hobby").hover(function() {
-		$("#tech-item").hide("slow");
-		$("#design-item").hide("slow");
-		$("#idea-item").hide("slow");
-		$("#hobby-item").show("slow");
-	});
+	// $("#tech").hover(function() {
+	// 	$("#tech-item").show("slow");
+	// 	$("#design-item").hide("slow");
+	// 	$("#idea-item").hide("slow");
+	// });
+	// $("#design").hover(function() {
+	// 	$("#tech-item").hide("slow");
+	// 	$("#design-item").show("slow");
+	// 	$("#idea-item").hide("slow");		
+	// });
+	// $("#idea").hover(function() {
+	// 	$("#tech-item").hide("slow");
+	// 	$("#design-item").hide("slow");
+	// 	$("#idea-item").show("slow");
+	// });
 });
